@@ -40,7 +40,7 @@ export default function Header() {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`${link.path === pathname?"text-orange-600 font-extrabold":"font-semibold"}`}
+                className={`${link.path === pathname?"text-orange-600 font-extrabold":"font-semibold"} hover:-translate-y-0.5 duration-500`}
               >
                 {link.name}
               </Link>
@@ -49,7 +49,7 @@ export default function Header() {
         </div>
       </div>
       <div>
-        <button className="rounded bg-black text-white py-2 px-8">
+        <button className="rounded bg-black text-white py-2 px-8 hover:scale-110 duration-500">
           Download
         </button>
       </div>

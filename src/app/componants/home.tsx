@@ -15,12 +15,12 @@ export default function Home() {
           faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
         </p>
         <div className="relative z-10 flex items-center gap-4">
-          <button className="flex items-center gap-2 px-6 py-2 text-white bg-black rounded">
+          <button className="flex items-center gap-2 px-6 py-2 text-white bg-black rounded group">
             <div>Get Started</div>
-            <Image src="/arrow.png" width={20} height={10} alt="arrow" />
+            <Image src="/arrow.png" className="group-hover:translate-x-3 duration-500" width={20} height={10} alt="arrow" />
           </button>
-          <button className="flex items-center gap-2 px-6 py-2 rounded">
-            <Image src="/play.png" width={20} height={10} alt="arrow" />
+          <button className="flex items-center gap-2 px-6 py-2 rounded group">
+            <Image src="/play.png" className="group-hover:-rotate-180 duration-500" width={20} height={20} alt="arrow" />
             <div>Watch Video</div>
           </button>
         </div>
