@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <div className="flex relative capitalize">
-      <div className="w-1/2 relative">
+    <div className="flex relative flex-wrap capitalize">
+      <div className="w-1/2 max-sm:hidden relative">
         <div className="absolute top-16 left-4 h-[150px] w-[200px] rounded-[40%] bg-gradient-to-t from-red-400 to-yellow-600 blur-xl z-0"></div>
         <Image
           src="/rings.png"
@@ -28,7 +28,7 @@ export default function Features() {
           alt="star"
         />
       </div>
-      <div className="w-1/2 pt-16">
+      <div className="w-1/2 min-w-[300px] pt-16">
         <h5 className="text-orange-600 mb-2 tracking-widest font-bold">FEATURES</h5>
         <h1 className="font-extrabold text-4xl">Uifry Premium</h1>
         <div className="py-8">
@@ -76,7 +76,7 @@ export default function Features() {
             faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
           </p>
         </div>
-        <div className="absolute top-44 -right-44 h-[150px] w-[200px] rounded-[40%] bg-gradient-to-t from-yellow-400 to-red-600 blur-2xl z-0"></div>
+        <div className="absolute top-44 -right-44 max-sm:hidden h-[150px] w-[200px] rounded-[40%] bg-gradient-to-t from-yellow-400 to-red-600 blur-2xl z-0"></div>
       </div>
     </div>
   );

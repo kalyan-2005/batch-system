@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <div className="flex gap-14 items-start mb-20">
-        <div className="flex flex-col gap-4">
+      <div className="flex flex-wrap max-sm:flex-col max-sm:ml-28 gap-4 md:gap-14 mb-20">
+        <div className="flex flex-col gap-4 max-lg:justify-center">
           <div className="flex gap-1 items-center">
             <div>
               <Image src="/logo.png" width={25} height={30} alt="logo" />
@@ -44,13 +44,13 @@ export default function Footer() {
         <div className="flex flex-col gap-4 font-bold">
           <h1 className="text-3xl font-bold">Newsletter</h1>
           <h1>Stay Up To Date</h1>
-          <div className="flex gap-6 my-4">
+          <div className="flex gap-6 my-4 max-sm:flex-col">
             <input
               type="email"
               className="w-28 outline-none p-2 text-center"
               placeholder="Your email"
             />
-            <button className="text-center bg-black text-white p-4 rounded px-10">
+            <button className="text-center bg-black text-white sm:p-4 rounded sm:px-10 max-sm:w-1/2">
               Subscribe
             </button>
           </div>

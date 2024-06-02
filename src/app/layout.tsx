@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-[1000px] m-auto font-clash">
+        <div className="w-[1000px] m-auto font-clash max-lg:w-full max-sm:p-2">
           <div><Header /></div>
           <div>{children}</div>
         </div>

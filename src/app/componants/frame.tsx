@@ -6,7 +6,7 @@ export default function Frame() {
       <div className="my-32">
         <Image
           src="/Frame.png"
-          className="relative z-10"
+          className="relative w-full z-10"
           width={1000}
           height={500}
           alt="frame"
@@ -15,7 +15,7 @@ export default function Frame() {
       <div className="absolute -left-16 -top-12 h-[200px] w-[250px] rounded-[40%] bg-gradient-to-t from-yellow-400 to-red-600 blur-2xl z-0"></div>
       <Image
         src="/Star.png"
-        className="absolute -top-20 -right-28"
+        className="absolute -top-20 -right-28 max-sm:right-0"
         width={52}
         height={44}
         alt="star"

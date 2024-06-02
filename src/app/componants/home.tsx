@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex">
-      <div className="relative w-1/2 py-12">
+    <div className="flex flex-wrap">
+      <div className="relative min-w-[300px] w-1/2 py-12">
         <div className="relative z-10">
           <h1 className="font-extrabold text-5xl">
             Make The Best Financial Decisions
@@ -41,7 +41,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="w-1/2 relative">
+      <div className="w-1/2 relative max-sm:hidden">
         <div className="absolute left-52 bottom-32 h-[150px] w-[200px] rounded-[40%] bg-gradient-to-l from-yellow-400 to-red-600 blur-xl z-0"></div>
         <Image
           src="/rings.png"

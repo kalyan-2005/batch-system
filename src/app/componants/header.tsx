@@ -34,13 +34,17 @@ export default function Header() {
             uifry<span className="text-[5px] align-super">TM</span>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 max-sm:hidden">
           {links.map((link) => {
             return (
               <Link
                 key={link.path}
                 href={link.path}
-                className={`${link.path === pathname?"text-orange-600 font-extrabold":"font-semibold"} hover:-translate-y-0.5 duration-500`}
+                className={`${
+                  link.path === pathname
+                    ? "text-orange-600 font-extrabold"
+                    : "font-semibold"
+                } hover:-translate-y-0.5 duration-500`}
               >
                 {link.name}
               </Link>
@@ -48,9 +52,14 @@ export default function Header() {
           })}
         </div>
       </div>
-      <div>
+      <div className="flex gap-2 items-center">
         <button className="rounded bg-black text-white py-2 px-8 hover:scale-110 duration-500">
           Download
+        </button>
+        <button className="flex flex-col gap-1 sm:hidden z-20 cursor-pointer">
+          <div className={ `border border-black rounded-full w-5`}></div>
+          <div className={`border border-black rounded-full w-5`}></div>
+          <div className={`border border-black rounded-full w-5`}></div>
         </button>
       </div>
     </div>

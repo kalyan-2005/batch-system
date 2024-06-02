@@ -5,13 +5,13 @@ export default function Advantages() {
     <div className="relative my-24">
       <Image
         src="/Star.png"
-        className="absolute top-0 -right-28"
+        className="absolute top-0 -right-28 max-sm:right-0"
         width={52}
         height={44}
         alt="star"
       />
-      <div className="flex">
-        <div className="w-1/2 py-32 pe-8">
+      <div className="flex flex-wrap">
+        <div className="w-1/2 min-w-[300px] py-32 pe-8">
           <h1 className="text-orange-600 tracking-widest font-bold">
             ADVANTAGES
           </h1>
@@ -28,7 +28,7 @@ export default function Advantages() {
             suspendisse aliquam.
           </p>
         </div>
-        <div className="w-1/2 relative">
+        <div className="w-1/2 max-sm:hidden relative">
           <div className="absolute bottom-28 left-28 h-[150px] w-[200px] rounded-[40%] bg-gradient-to-t from-yellow-400 to-red-600 blur-2xl z-0"></div>
           <Image
             src="/rings.png"
@@ -46,7 +46,7 @@ export default function Advantages() {
           />
         </div>
       </div>
-      <div className="flex my-8 relative">
+      <div className="flex flex-wrap my-8 relative">
         <Image
           src="/Star.png"
           className="absolute -top-4 right-1/2 rotate-45"
@@ -54,7 +54,7 @@ export default function Advantages() {
           height={44}
           alt="star"
         />
-        <div className="w-1/2 relative">
+        <div className="w-1/2 max-sm:hidden relative">
           <div className="absolute bottom-44 left-28 h-[150px] w-[300px] rotate-45 rounded-[40%] bg-gradient-to-t from-yellow-400 to-red-600 blur-2xl z-0"></div>
           <Image
             src="/rings.png"
@@ -71,7 +71,7 @@ export default function Advantages() {
             alt="iphone"
           />
         </div>
-        <div className="w-1/2 py-32 ps-8 px-4">
+        <div className="w-1/2 min-w-[300px] py-32 ps-8 px-4">
           <div className="flex gap-2 items-center py-4">
             <Image src="/custom.png" width={30} height={30} alt="icon" />
             <h1 className="font-bold text-2xl">Fully Customizable</h1>

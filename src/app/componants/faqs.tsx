@@ -4,10 +4,10 @@ export default function Faqs() {
   return (
     <div className="relative">
       <h1 className="text-orange-600 tracking-widest font-bold">FAQ</h1>
-      <h1 className="w-80 font-bold text-4xl mb-6">
+      <h1 className="max-w-80 font-bold text-4xl mb-6">
         Frequently Asked Questions
       </h1>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap max-sm:gap-2">
         {Array(6)
           .fill(0)
           .map((_, index) => (
@@ -17,7 +17,7 @@ export default function Faqs() {
                 index === 0 || index === 3 || index === 4
                   ? "bg-red-500/90 text-white"
                   : "text-black"
-              } rounded-xl w-1/2 p-8`}
+              } rounded-xl w-1/2 p-8 min-w-[244px] max-sm:m-auto`}
             >
               <h1 className="text-3xl font-extrabold mb-2">
                 The Best Financial Accounting App Ever!

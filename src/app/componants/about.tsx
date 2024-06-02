@@ -12,11 +12,11 @@ export default function About() {
       />
       <div className="my-20">
         <h1 className="text-center font-bold tracking-widest">TESTIMONIAL</h1>
-        <h1 className="text-center font-extrabold text-5xl w-2/5 m-auto">
+        <h1 className="text-center font-extrabold text-5xl w-2/5 max-sm:w-full m-auto">
           What Our Users Say About Us?
         </h1>
-        <div className="flex">
-          <div className="w-1/2 relative">
+        <div className="flex flex-wrap">
+          <div className="w-1/2 relative max-sm:hidden">
             <div className="absolute top-40 right-24 h-[200px] w-[250px] rounded-[40%] bg-gradient-to-t from-yellow-400 to-red-600 blur-2xl z-0"></div>
             <Image
               src="/rings.png"
@@ -61,7 +61,7 @@ export default function About() {
               alt="profile"
             />
           </div>
-          <div className="w-1/2 px-8 relative pt-16 flex flex-col gap-6">
+          <div className="w-1/2 min-w-[300px] px-8 relative pt-16 flex flex-col gap-6">
             <h1 className="font-bold text-3xl">
               The Best Financial Accounting App Ever!
             </h1>
