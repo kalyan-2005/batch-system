@@ -1,5 +1,4 @@
-"use client"
-import { link } from "fs";
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -28,8 +27,12 @@ export default function Header() {
     <div className="flex justify-between items-center my-8">
       <div className="flex items-center gap-8">
         <div className="flex gap-1 items-center">
-          <div><Image src='/logo.png' width={20} height={20} alt='logo'/></div>
-          <div className="font-extrabold text-xl">uifry<span className="text-[5px] align-super">TM</span></div>
+          <div>
+            <Image src="/logo.png" width={20} height={25} alt="logo" />
+          </div>
+          <div className="font-extrabold text-xl">
+            uifry<span className="text-[5px] align-super">TM</span>
+          </div>
         </div>
         <div className="flex gap-4">
           {links.map((link) => {
@@ -37,7 +40,7 @@ export default function Header() {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`${link.path === pathname ? "text-orange-600 font-extrabold":"font-semibold"}`}
+                className={`${link.path === pathname?"text-orange-600 font-extrabold":"font-semibold"}`}
               >
                 {link.name}
               </Link>
